@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howami - Your Inner Guide</title>
+    <link rel="icon" type="image/x-icon" href="/Flavicon_white_parents (1).png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="/HOWAMiLogo.png" alt="Howami Logo" class="logo">
+    </div>
+    
+    <div class="user-type-container">
+        <button class="user-type-button" onclick="selectUserType('teen')">Teen</button>
+        <button class="user-type-button" onclick="selectUserType('parent')">Parent</button>
+    </div>
+
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <h2>Howami Parental Companion</h2>
+        </div>
+
+        <div class="chat-messages" id="messageContainer"></div>
+
+        <div class="chat-input-container">
+            <input type="text" class="chat-input" id="userInput" placeholder="Type your message...">
+            <button class="send-button" id="sendButton">Send</button>
+        </div>
+    </div>
+
+    <script src="prompts.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
